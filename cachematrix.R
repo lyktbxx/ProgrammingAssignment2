@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## function MakeCacheMatrix creates a matrix entity and loads it into the cache. 
+## New Values can be pushed into the matrix by the function setinv
+## cacheSolve returns the inverse of whatever matrix was loaded into it by
+## function makeCacheMatrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function updates the value of the inverse of a matrix if 
+## the value of the matrix is updated.
 
 cacheSolve <- function(x, ...) {
    m <- x$getsolve()
